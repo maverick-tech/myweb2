@@ -7,7 +7,7 @@ pipeline {
   		stage('Build') {
 	    steps {
 	      withEnv(["PATH+EXTRA=${HOME}/go/bin"]){
-	        sh 'make build'
+	        sh 'go build'
 	      }
 	    }
 	  }
